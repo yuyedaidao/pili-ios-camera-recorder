@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fm-oz-dIF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="517"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bs-tj-PNq">
+                                <rect key="frame" x="518" y="536" width="54" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="4Vj-pQ-Bgp"/>
+                                    <constraint firstAttribute="height" constant="44" id="xXP-KB-AKs"/>
+                                </constraints>
+                                <state key="normal" title="Camera">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeCameraButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ni3-L7-FKl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9h-9T-dXb">
+                                <rect key="frame" x="16" y="536" width="59" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1Yt-UD-Fjf"/>
+                                    <constraint firstAttribute="width" constant="59" id="jYI-Cy-pez"/>
+                                </constraints>
+                                <state key="normal" title="Connect">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CW5-eq-pKG"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j98-Zi-Krd">
+                                <rect key="frame" x="258" y="536" width="84" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2zx-ij-0R2"/>
+                                    <constraint firstAttribute="width" constant="84" id="Vbt-LS-e2M"/>
+                                </constraints>
+                                <state key="normal" title="Take Picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePictureButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3tM-Ju-eYV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="u9h-9T-dXb" secondAttribute="bottom" constant="20" id="0kE-RE-ghe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6fm-oz-dIF" secondAttribute="trailing" constant="-16" id="3rf-Bl-8vG"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6fm-oz-dIF" secondAttribute="bottom" id="9PK-dd-AVp"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6fm-oz-dIF" secondAttribute="bottom" constant="83" id="Idn-Lh-N5o"/>
+                            <constraint firstItem="6fm-oz-dIF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="Lyv-IO-S5E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1bs-tj-PNq" secondAttribute="trailing" constant="12" id="VNJ-Lf-pMM"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="j98-Zi-Krd" secondAttribute="bottom" constant="20" id="jpA-Lx-e8O"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1bs-tj-PNq" secondAttribute="bottom" constant="20" id="lSd-Ol-XoO"/>
+                            <constraint firstAttribute="centerX" secondItem="j98-Zi-Krd" secondAttribute="centerX" id="nhe-h1-hgg"/>
+                            <constraint firstItem="u9h-9T-dXb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="oAB-2K-XFL"/>
+                            <constraint firstItem="6fm-oz-dIF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="u5D-oE-Bf8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9PK-dd-AVp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="6fm-oz-dIF" id="G8c-9a-nM3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
