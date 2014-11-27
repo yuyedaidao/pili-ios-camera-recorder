@@ -37,11 +37,11 @@ PLRecorderKit 是为 **pili.io** 流媒体云服务提供的一套推送直播�
 
 #### 1.1.2 源码方式
 
-- 添加 PLPlayerKit 为你的项目 submodule
+- 添加 PLRecorderKit 为你的项目 submodule
 	```shell
-	git submodule add https://github.com/pili-io/pili-ios-player.git /Vendor/pili-ios-player.git
+	git submodule add https://github.com/pili-io/pili-ios-camera-recorder.git /Vendor/pili-ios-camera-recorder.git
 	``` 
-- 添加 PLPlayerKit.xcodeproj 为你的 iOS 工程的子工程
+- 添加 PLRecorderKit.xcodeproj 为你的 iOS 工程的子工程
 - 在 Build Phases / Target Dependecies 中添加 PLRecorderKit-Universal
 - 在 Build Phases / Link Binary With Libraries 中添加以下依赖库
 	- libPLRecorderKit.a
