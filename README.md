@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PLRecorderKit
 
 PLRecorderKit 是为 **pili.io** 流媒体云服务提供的一套 SDK, 旨在解决 iOS 端快速、轻松实现 iOS 设备利用摄像头直播接入，便于 **pili.io** 的开发者专注于产品业务本身，而不必在技术细节上花费不必要的时间。
@@ -86,3 +87,9 @@ PLCaptureManager 是核心类，你只需要关注并使用这个类就可以完
 
 - 1.0.0
 	- 完成基本的推流、预览功能
+=======
+pili-ios-camera-recorder
+========================
+
+pili.io iOS camera streaming framework over RTMP
+>>>>>>> 28bdc3065ef72c61a4307dbbb440f3bc9292433a
