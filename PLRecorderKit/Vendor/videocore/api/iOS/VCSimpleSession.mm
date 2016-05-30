@@ -441,7 +441,7 @@ namespace videocore { namespace simpleApi {
 {
     std::stringstream uri ;
     uri << (rtmpUrl ? [rtmpUrl UTF8String] : "") << "/" << (streamKey ? [streamKey UTF8String] : "");
-    
+    NSLog(@"rtmpUrl:%@ | streamKey:%@",rtmpUrl,streamKey);
     m_outputSession.reset(
                           new videocore::RTMPSession ( uri.str(),
                                                       [=](videocore::RTMPSession& session,
@@ -695,7 +695,6 @@ namespace videocore { namespace simpleApi {
 
     m_h264Packetizer->setOutput(m_outputSession);
     m_aacPacketizer->setOutput(m_outputSession);
-
 
 }
 - (NSString *) applicationDocumentsDirectory

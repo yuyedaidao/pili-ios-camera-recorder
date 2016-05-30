@@ -89,7 +89,7 @@ VCSessionDelegate
 
 #pragma mark - Property
 
-- (void)setPushURL:(NSURL *)pushURL {
+- (void)setPushURL:(NSURL *)pushURL { //TODO:地址处理并不优雅
     _pushURL = pushURL;
     
     NSString *scheme = pushURL.scheme;
@@ -102,7 +102,7 @@ VCSessionDelegate
     NSString *urlString = pushURL.absoluteString;
     NSArray *components = [urlString componentsSeparatedByString:@"/"];
     [components enumerateObjectsUsingBlock:^(NSString *str, NSUInteger idx, BOOL *stop) {
-        if ([str isEqualToString:@"livestream"]) {
+        if ([str isEqualToString:@"doPublish=test123"]) {
             NSString *host = components[0];
             for (NSUInteger i = 1; i <= idx; i++) {
                 host = [host stringByAppendingString:[NSString stringWithFormat:@"/%@", components[i]]];
