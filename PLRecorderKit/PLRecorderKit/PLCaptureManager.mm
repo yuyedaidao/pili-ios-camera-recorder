@@ -102,7 +102,7 @@ VCSessionDelegate
     NSString *urlString = pushURL.absoluteString;
     NSArray *components = [urlString componentsSeparatedByString:@"/"];
     [components enumerateObjectsUsingBlock:^(NSString *str, NSUInteger idx, BOOL *stop) {
-        if ([str isEqualToString:@"doPublish=test123"]) {
+        if ([str isEqualToString:@"doPublish=iqilu123456"]) {
             NSString *host = components[0];
             for (NSUInteger i = 1; i <= idx; i++) {
                 host = [host stringByAppendingString:[NSString stringWithFormat:@"/%@", components[i]]];
